@@ -1,0 +1,77 @@
+* {
+  font-family: averta;
+}
+@font-face {
+  font-family: 'averta';
+  src: url('fonts/Averta-Regular.otf');
+}
+#artist-image {
+    width: 27vw;
+}
+
+#ticketmaster-img {
+    width: 3vw;
+}
+
+* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i.fa-brands.fa-spotify {
+    font-size: 3vw;
+    color: #1db954;
+    background-color: #191414;
+    border-radius: 3vw;
+    line-height: 2vw;
+    margin-top: 0.45vw;
+}
+
+i {
+    font-size: 2.5vw;
+}
+i.fa-brands.fa-wikipedia-w {
+    margin-top: 0.3vw;
+    color: black;
+}
+
+div#main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 27vw;
+    justify-content: center;
+    row-gap: 1.3vw;
+}
+
+i.fa-brands.fa-itunes-note {
+    background-color: #e86374;
+    color: white;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    padding-top: 0.45vw;
+    padding-bottom: 0.45vw;
+    border-radius: 10px;
+    font-size: 2vw;
+}
+i.fa-solid.fa-house {
+    color: #a68565;
+    margin-top: 0.2vw;
+}
+
+td {
+    padding-left: 45px;
+    padding-bottom: 5px;
+    max-width: 11vw;
+}
+td>a {
+  color: black;
+  text-decoration: none;
+}
+
+td>a:hover {
+  color: gray;
+}
+
+tr#table-header {
+    text-align: center;
+}

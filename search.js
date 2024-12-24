@@ -151,7 +151,7 @@ function changeDate (date){
 if(!window.location.hash){
 window.onload = function() {
   let events_shown = []
-  let QueryURL = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=G1XqaCz3JyVAlSgxdHQ1UExYI9mgDVRx&segmentName=Music&size=164"
+  let QueryURL = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=G1XqaCz3JyVAlSgxdHQ1UExYI9mgDVRx&segmentName=Music&size=164&locale=en-us"
   document.querySelector("#trending-concerts").textContent = "TRENDING CONCERTS"
   console.log(QueryURL)
   fetch(QueryURL)
@@ -211,7 +211,7 @@ searchButton.addEventListener("click", function() {
     x = `${searchDate.value}T00:00:00Z`
   }
   // This URL below contains user's inputs and concatenates it into the url
-   OriginalSearchURL = `https://app.ticketmaster.com/discovery/v2/events.json?&startDateTime=${x}&apikey=G1XqaCz3JyVAlSgxdHQ1UExYI9mgDVRx&keyword=${searchInput.value}&city=${searchCity.value}&latlong=${latlong}&radius=${searchRadius.value}&unit=miles&segmentName=Music&classificationName=${searchGenre.value}&sort=${sortButton.value}`
+   OriginalSearchURL = `https://app.ticketmaster.com/discovery/v2/events.json?&startDateTime=${x}&apikey=G1XqaCz3JyVAlSgxdHQ1UExYI9mgDVRx&keyword=${searchInput.value}&city=${searchCity.value}&latlong=${latlong}&radius=${searchRadius.value}&unit=miles&segmentName=Music&classificationName=${searchGenre.value}&sort=${sortButton.value}&locale=en-us`
   console.log(OriginalSearchURL)
   fetchconcerts(OriginalSearchURL)
 }
@@ -340,7 +340,7 @@ async function getProfile(accessToken, url="") {
   let artist = topArtist.items[i].name;
   console.log(artist)
   let events_shown = []
-  let QueryURL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=G1XqaCz3JyVAlSgxdHQ1UExYI9mgDVRx&segmentName=Music&size=60&keyword=${artist}`
+  let QueryURL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=G1XqaCz3JyVAlSgxdHQ1UExYI9mgDVRx&segmentName=Music&size=60&keyword=${artist}&locale=en-us`
    document.querySelector('#trending-concerts').textContent = "Your Recommendations"
   console.log(QueryURL)
   fetch(QueryURL)

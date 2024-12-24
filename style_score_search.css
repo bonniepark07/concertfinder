@@ -1,31 +1,23 @@
-body {
-  font-family: 'Palatino', Times, sans-serif
+@font-face {
+  font-family: 'averta';
+  src: url('fonts/Averta-Regular.otf');
 }
+
+* {
+  font-family: averta;
+}
+
+
 
 .your-class::-webkit-input-placeholder {
   color: black;
 }
 
-/* #spotify-login{
-  position: absolute;
-  right: 3vw;
-
-} */
 .search-wrapper {
   position: relative;
 }
 
 #spotify-login {
-  /* position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 10px;
-  background: black;
-  color:#f7b0cb;
-  display: block;
-  text-align: center;
-  width: 35px;
-  height: 35px; */
   display: flex;
   /* Change to flex box*/
   align-items: center;
@@ -43,7 +35,7 @@ body {
   line-height: 25px;
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 50px;
   z-index: 2;
   border: 0px;
 
@@ -67,11 +59,11 @@ body {
   position: relative;
   margin-top: 50px;
   margin-bottom: 20px;
-
+  font-family: fangsong;
 }
 
-#name:hover{
-  color:deeppink;
+#name:hover {
+  color: deeppink;
 }
 
 #slogan {
@@ -92,7 +84,10 @@ body {
   width: 10vw;
   height: 10vw;
   margin: 20px;
+  box-shadow: 7px 7px 12px lightgray;
+
 }
+
 #search-concerts {
   display: flex;
   cursor: pointer;
@@ -101,30 +96,36 @@ body {
   border: 0.1rem solid hotpink;
   margin-bottom: 1.4rem;
   background: #f7f7f7;
-  font-size: 10px;
-  width: 60vw;
-  height: 10vw;
+  font-size: 7px;
+  width: 50vw;
+  height: 6vw;
   margin: 5px;
+  box-shadow: 7px 7px 12px lightgray;
 }
-#search-concerts >.body {
-  height: 10vw;
+
+#search-concerts:hover {
+  box-shadow: 11px 11px 12px lightgray;
+}
+
+#search-concerts>.body {
+  height: 100%;
   width: 53vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#search-concert-cards{
+
+#search-concert-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 18vw;
-  margin-right: 17vw;
-  flex-direction: column;
 }
+
 .card body {
   width: 50%;
   height: 50%;
 }
+
 #trending-concerts {
   font-size: 14px;
   margin-left: 20vw;
@@ -167,12 +168,11 @@ body {
 }
 
 #search-concerts>.header {
-    margin-right: 2vw;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
+  margin-right: 2vw;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }
-
 
 
 
@@ -226,9 +226,11 @@ body {
   font-size: 15px;
   /* border-radius: 0.4rem; */
 }
-#city-dropdown{
+
+#city-dropdown {
   /* height: 100%; */
 }
+
 /* #city::placeholder {
 
 
@@ -270,7 +272,8 @@ body {
   align-items: stretch;
   height: 40px;
 }
-#search-sort{
+
+#search-sort {
   display: flex;
   justify-content: center;
   margin-left: 25vw;
@@ -302,7 +305,6 @@ footer {
 } */
 
 .buyTickets {
-  /* margin-top: 1rem; */
   display: block;
   text-decoration: none;
   background: pink;
@@ -311,10 +313,8 @@ footer {
   border: 1.5px solid hotpink;
   border-radius: 0.4rem;
   text-align: center;
-  /* text-align: justify; */
   width: 20%;
-  /* height: 3vw; */
-  font-size: 18px;
+  font-size: 14px;
 }
 
 
@@ -352,32 +352,39 @@ footer {
 
 #totalresults {
   font-size: 14px;
-  margin-left: 18vw;
+  margin-left: 23.6vw;
 }
-#search-concerts > .body > h4 {
-    width: 24vw;
-    font-size: 18px;
-    font-weight: normal;
+
+#search-concerts>.body>h4 {
+  width: 24vw;
+  font-size: 14px;
+  font-weight: normal;
 }
+
 div#page {
 
-    text-align: center;
+  text-align: center;
 }
+
 button#previous-button {
-    margin-right: -0.25vw;
-    padding-right: 0.2px;
-    
+  margin-right: -0.25vw;
+  padding-right: 0.2px;
+
 }
 
 .material-symbols-outlined {
   font-size: 12px;
 }
 
-#home-page-button{
+#home-page-button {
   text-decoration: none;
 }
 
+#page>button {
+  border-radius: 3px;
+  border-width: 1px;
+}
 
-
-
-
+#popular-concerts:hover {
+  box-shadow: 11px 11px 12px lightgray;
+}
